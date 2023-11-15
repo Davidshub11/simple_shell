@@ -55,10 +55,10 @@ void clays_executor(const char *clays_cmd_line)
 			free(clays_pathcpy);
 			while (clays_path != NULL)
 			{
-				char clays_fullpth[256];
+				char clays_fu[256];
 
-				snprintf(clays_fullpth, sizeof(clays_fullpth), "%s/%s", clays_path, clays_args[0]);
-				if (execve(clays_fullpth, clays_args, clays_myenv) != -1)
+				snprintf(clays_fu, sizeof(clays_fu), "%s/%s", clays_path, clays_args[0]);
+				if (execve(clays_fu, clays_args, clays_myenv) != -1)
 				{
 					exit(EXIT_SUCCESS);
 				}
@@ -74,4 +74,3 @@ void clays_executor(const char *clays_cmd_line)
 		wait(NULL);
 	}
 }
-

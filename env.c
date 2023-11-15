@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * print_env - prints environment variable to stdout
+ * clays_env - prints environment variable to stdout
  * @clays_env: envs
  */
 void clays_env(char **clays_env)
